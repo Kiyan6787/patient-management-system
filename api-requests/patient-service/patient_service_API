@@ -1,0 +1,13 @@
+GET all patients
+http://localhost:4000/patients
+
+POST create a patient
+http://localhost:4000/patients
+- Pass in JSON object with patient information
+
+PUT update a patient
+http://localhost:4000/{id}
+ - Pass in JSON with updated patient information
+
+ DELETE delete a patient
+ http://localhost:4000/{id}
