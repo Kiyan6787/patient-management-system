@@ -3,3 +3,29 @@ Navigate to localhost:4000/h2-console to view h2 database in the browser
 Navigate to http://localhost:4000/v3/api-docs to view Swagger API Doc
 
 Go to Swagger.io -> Swagger Editor to see Swagger UI and docs together.
+
+REST vc GRPC
+Rest is good for browser to communicate with services, GRPC offers a better was for services to communicate with each other using Proto Buffer. GPRC is better for
+service communications.
+
+After adding proto file, open the Maven tab -> open working project -> Lifecycle -> Compile; and then view target folder for output.
+
+*StreamObserver *Read up more on this, very powerful, allows for returning of multiple responses and allows for real time updates.
+
+Kafka
+Broker - A server that stores and delivers messages to consumers
+Topic - Categorized channel where messages are stored and exchanged
+
+gRPC : 1-1 microservice communication, when you need an immediate response (Synchronous)
+Kafka: 1-to-may microservice communication (Asynchronous)
+
+KafkaTemplate - How we define our message types, use KafkaTemplate to send messages, going to be Key-Value pair,
+key of type string, value of type byte array.
+
+## Rest client -> http://localhost:4004/api/patients
+## API Gateway -> http://patient-service:4000/patients
+## Patient service (Spring Boot App) -> /patients -> Patients Array
+
+Swagger
+Rest client -> http://localhost:4004/api-docs/patients
+API Gateway -> http://patient-service:4000/v3/api-docs

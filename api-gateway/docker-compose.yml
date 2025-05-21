@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  api-gateway:
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    image: api-gateway:latest
+    container_name: api-gateway
+    ports:
+      - "4004:4004"
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge

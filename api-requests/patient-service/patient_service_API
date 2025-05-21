@@ -1,5 +1,7 @@
 GET all patients
 http://localhost:4000/patients
+--Using API Gateway
+http://localhost:4004/api/patients
 
 POST create a patient
 http://localhost:4000/patients
